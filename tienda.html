@@ -1,0 +1,57 @@
+<body>
+    <header>
+        <h1>Mi Tienda Online</h1>
+        <form action="index.html" method="post"></form>
+    </header>
+
+    <main>
+        <section id="mods policia ">
+            <h2>Productos</h2>
+            <div class="BMW X5" id="BMW X5">
+                <h3>BMW X5</h3>
+                <p>Precio: $12.00</p>
+                <button onclick="agregarAlCarrito('BMW X5', 10)">Agregar al Carrito</button>
+            </div>
+            <div class="SKODA SUPERB" id="SKODA SUPERB">
+                <h3>SKODA SUPERB</h3>
+                <p>Precio: $15.00</p>
+                <button onclick="agregarAlCarrito('SKODA SUPERB', 20)">Agregar al Carrito</button>
+            </div>
+            <div class="seat leon policia municipal de madrid" id="seat leon policia municipal de madrid">
+                <h3>seat leon </h3>
+                <p>Precio: $15.00</p>
+                <button onclick="agregarAlCarrito('seat leon policia municipal de madrid', 20)">Agregar al Carrito</button>
+            </div>
+            <div class="Bomberos de madrid" id="BOMBEROS DE MADRID">
+                <h3>BOMBEROS DE MADRID</h3>
+                <p>Precio: $15.00</p>
+                <button onclick="agregarAlCarrito('BOMBEROS DE MADRID', 20)">Agregar al Carrito</button>
+            </div>
+            <div class="AMBULANCIA SAMUR" id="AMBULANCIA SAMUR">
+                <h3>AMBULANCIA SAMUR</h3>
+                <p>Precio: $15.00</p>
+                <button onclick="agregarAlCarrito('BOMBEROS DE MADRIDAMBULANCIA SAMUR', 20)">Agregar al Carrito</button>
+            </div>
+            <div class="AMBULANCIA SUMMA" id="AMBULANCIA SUMMA">
+                <h3>AMBULANCIA SUMMA</h3>
+                <p>Precio: $15.00</p>
+                <button onclick="agregarAlCarrito('AMBULANCIA SUMMA', 20)">Agregar al Carrito</button>
+            </div>
+            <!-- Más productos... -->
+        </section>
+        <section id="carrito">
+            <h2>Carrito</h2>
+            <div id="itemsCarrito"></div>
+            <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+         </section>
+        <!-- Agrega más productos según sea necesario -->
+</ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mi Tienda Online</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

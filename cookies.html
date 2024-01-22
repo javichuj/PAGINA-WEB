@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Cookies</title>
+</head>
+<body>
+
+    <h1>Trabajando con Cookies</h1>
+
+    <script>
+        // Función para establecer una cookie
+        function setCookie(nombre, valor, expiracionDias) {
+            var fechaExpiracion = new Date();
+            fechaExpiracion.setDate(fechaExpiracion.getDate() + expiracionDias);
+            var cookieString = nombre + "=" + valor + "; expires=" + fechaExpiracion.toUTCString() + "; path=/";
+            document.cookie = cookieString;
+        }
+
+        // Función para obtener el valor de una cookie
+        function getCookie(nombre) {
+            var name = nombre + "=";
+            var cookies = document.cookie.split(';');
+            for (var i = 0; i < cookies.length; i++) {
+                var cookie = cookies[i].trim();
+                if (cookie.indexOf(name) === 0) {
+                    return cookie.substring(name.length, cookie.length);
+                }
+            }
+            return "";
+        }
+
+        // Obtener el valor de la cookie "miCookie" y mostrarlo en la consola del navegador
+        var valorCookie = getCookie("miCookie");
+        console.log("Valor de la cookie: " + valorCookie);
+    </script>
+
+</body>
+</html>

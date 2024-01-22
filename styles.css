@@ -1,0 +1,117 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(179, 4, 4);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a:hover{
+    color:rgb(3, 145, 145);
+}
+
+a:active{
+    color:goldenrod;
+}
+
+ a:visited{
+    color: rgb(90, 159, 4);
+} 
+.oferta{
+    display: flex;
+    height: 2em;
+    background-color: white;
+}
+.oferta a{
+    color: #0368d5;
+    text-decoration: underline;
+    margin:auto;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0;
+    
+}
+.navbar{
+    display: flex;
+    height: 3em;
+    background-color: rgb(147, 12, 12);
+    border: 1px solid white;
+}
+.navbar a{
+    color: white;
+    margin:auto;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0.5em;
+}
+.menu{
+    display: flex;
+    height: 3em;
+    background-color: black;
+}
+.menu img{
+    position: relative;
+    top: 1em;
+    margin-left: 1%;
+    margin-right: 2%;
+}
+.menu a{
+    color: white;
+    margin:auto;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0.5em;
+}
+.envios{
+    display: flex;
+    height: 3em;
+    background-color: white;
+  }
+.envios a{
+    width: 29em;
+    background-color: rgb(233, 233, 233);
+    margin:auto;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0.75em;
+}
+.horaDeMoverse{
+    display: flex;
+    width: 100%;
+    height: 20em;
+    background-image: url('imagenes/horaDeMoverse.jpg');
+    background-size: cover;
+
+}
+{
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.producto {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+}
